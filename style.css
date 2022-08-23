@@ -142,7 +142,7 @@ section{
         transform: translateY(3px);
     }
     100%{
-        transform: translateY(-3px);
+        transform: translateY(-4px);
     }
 }
 
