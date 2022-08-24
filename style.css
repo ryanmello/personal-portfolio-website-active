@@ -211,7 +211,6 @@ PROJECTS
 .section__title{
     text-align: center;
     font-size: 48px;
-    padding-bottom: 24px;
 }
 
 .project__img{
@@ -276,4 +275,39 @@ PROJECTS
 
 .project__description--para{
     margin: 16px 0;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer{
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+}
+
+#footer__personal-logo{
+    height: 50px;
+    filter: invert(1);
+}
+
+.footer__social--link{
+    color: white;
+    padding: 0 16px;
+}
+
+.footer__copyright{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.img__footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
 }
