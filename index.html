@@ -84,7 +84,6 @@
                         <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" alt="">
                         <span class="language__name">JS</span>
                     </figure>
-                    
                 </div>
             </div>
             <div class="modal__half modal__contact">
@@ -97,7 +96,7 @@
                     </div>
                     <div class="form__item">
                         <label  class="form__item--label">Email</label>
-                        <input  class="input" name="user_email" type="email" required></input>
+                        <input  class="input" name="user_email" type="email" autocomplete="do-not-autofill" required></input>
                     </div>
                     <div class="form__item">
                         <label  class="form__item--label">Message</label>
@@ -107,7 +106,14 @@
                         Send it my way
                     </button>
                 </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking with you soon.
+                </div>
             </div>
+            <i class="fas fa-times modal__exit click"></i>
         </div>
     </section>
     <section id="projects">
