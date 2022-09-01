@@ -390,6 +390,7 @@ MODAL
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 
 .modal__overlay--loading{
@@ -405,6 +406,11 @@ MODAL
     text-align: center;
     padding: 28px;
     color: white;
+    z-index: -1;
+}
+
+.modal__overlay--visible{
+    z-index: 1;
 }
 
 .fa-spinner{
@@ -553,9 +559,5 @@ footer{
     padding-bottom: 16px;
 }
 
-/*
 
-TESTING CHANGES Confirmed
-
-*/
 
