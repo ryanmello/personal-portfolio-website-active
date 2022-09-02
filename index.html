@@ -30,7 +30,7 @@
                 <li class="nav__link">
                     <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
                 </li>
                 <li class="nav__link click">
@@ -46,7 +46,7 @@
                     I'm a <b class="purple">Frontend Software Engineer</b> with a strong passion for building 
                     web applications with great user experiences. 
                     <br>
-                    Here is a bit more <b class="purple">about me.</b>
+                    Here's a bit more <b class="purple click" onclick="toggleModal()">about me.</b>
                 </p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/ryan-mello-778a161b9/" target="_blank" class="social__link click">
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
-                <i class="fas fa-times modal__exit click"></i>
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
                 <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities</h4>
                 <form id="contact__form" onsubmit="contact(event)">

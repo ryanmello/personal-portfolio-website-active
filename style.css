@@ -116,6 +116,23 @@ label{
     width: 100%;
 }
 
+nav, 
+.scroll,
+.header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 500ms 600ms;
+}
+
+.modal__open nav, 
+.modal__open .scroll,
+.modal__open .header {
+    opacity: 0;
+    visibility: none;
+    transition: all 400ms;
+}
+
+
 /*
 
 LANDING PAGE
