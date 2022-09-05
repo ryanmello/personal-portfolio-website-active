@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 li{
     list-style-type: none;
 }
@@ -173,8 +177,6 @@ nav,
     background-color: white;
     color: #242424;
 }
-
-
 
 /*
 
@@ -636,6 +638,109 @@ footer{
     display: flex;
     justify-content: center;
     padding-bottom: 16px;
+}
+
+/*
+
+RESPONSIVENESS
+
+*/
+
+@media (max-width: 768px){
+    .title{
+        font-size: 80px;
+    }
+
+    .section__title{
+        font-size: 32px;
+    }
+
+    .project__description--title{
+        font-size: 24px;
+    }
+
+    .project__description--sub-title{
+        font-size: 16px;
+    }
+
+    .project__description--para{
+        width: 100%;
+        max-width: 360px;
+        font-size: 14px;
+    }
+
+    .modal{
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .modal__half{
+        width: 100%;
+        padding: 30px 72px;
+    }
+
+    .modal__title{
+        font-size: 18px;
+    }
+
+    .modal__sub-title{
+        font-size: 12px;
+        margin: 12px 0px 14px;
+    }
+
+    .modal__para{
+        font-size: 14px;
+    }
+
+    .modal__languages{
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal__language{
+        max-width: 70px;
+    }
+
+    input{
+        height: 20px;
+    }
+
+    textarea{
+        height: 40px;
+    }
+
+    .modal__contact{
+        background-color: #242424;
+    }
+
+}
+
+@media (max-width: 586px){
+    .mail__btn{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .nav__link:first-child{
+        display: none;
+    }
+
+    .project__description{
+        text-align: center;
+    }
+}
+
+@media (max-width: 494px){
+    .mail__btn{
+        width: 0px;
+        height: 0px;
+        font-size: 20px;
+    }
+
+    .project__description--para{
+        font-size: 0px;
+    }
 }
 
 
